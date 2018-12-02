@@ -14,11 +14,14 @@
     "gatsby-plugin-react-helmet": "^3.0.2",
     "gatsby-plugin-sharp": "^2.0.12",
     "gatsby-plugin-typescript": "^2.0.2",
+    "gatsby-plugin-typography": "^2.2.2",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.13",
+    "typography": "^0.16.17"
   },
   "keywords": [
     "gatsby"
@@ -32,6 +35,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/typography": "^0.16.0",
     "prettier": "^1.15.2"
   },
   "repository": {
