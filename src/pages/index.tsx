@@ -1,21 +1,36 @@
-import React from 'react'
+import * as React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../layouts/layout'
 import Image from '../components/image'
-import SecondPage from './page-2';
+import Dev from '../images/Final.gif'
 
-const IndexPage = () => (
-  <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-    <SecondPage/>
-  </Layout>
-)
+ class IndexPage extends React.Component<any, any> {
+  /**
+   *
+   */
+  constructor(props: any) {
+    super(props)
+    this.state = { isStopped: false, isPaused: false }
+  }
 
-export default IndexPage
+  public render() {
+    return (
+      <Layout>
+        <h1>Hi people</h1>
+        <p>Welcome to your new Gatsby site.</p>
+        <p>Now go build something great.</p>
+        <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
+          <Image />
+        </div>
+        <div>
+         <img src={Dev} style={{width: 500}}/>
+        </div>
+        <Link to="/page-2/">Go to page 2</Link>
+      </Layout>
+    )
+  }
+}
+
+
+export default IndexPage;
